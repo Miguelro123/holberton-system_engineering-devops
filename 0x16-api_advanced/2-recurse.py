@@ -4,17 +4,24 @@ import requests
 import sys
 
 
-def top_ten(subreddit):
-    """Queries the Reddit API and prints the titles of the first 10 hot posts
-    listed for a given subreddit."""
+def recurse(subreddit, hot_list=[], after=""):
+    """Queries the Reddit API and returns a list containing the titles of all
+    hot articles for a given subreddit."""
 
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    parameters = {'limit': 10}
-    json_obj = requests.get(
-        url, headers={'User-Agent': 'My User Agent 1.0'}, params=parameters)
+    url = "https://www.reddit.com/r/{}/hot.json{}".format(subreddit, after)
+    json_obj = requests.get(url, headers={'User-Agent': 'My User Agent 1.0'})
+
     if json_obj.status_code != 404:
-        dict_obj = json_obj.json().get('data').get('children')
-        for each in dict_obj:
-            print(each.get('data').get('title'))
+        dict_obj = json_obj.json()
+        list_obj = dict_obj.get('data').get('children')
+        for each in list_obj:
+            hot_list.append(each.get('data').get('title'))
+        next_fullname = dict_obj.get('data').get('after')
+        after = "?after={}".format(next_fullname)
+
+        if next_fullname is not None:
+            hot_list.append(recurse(subreddit, hot_list, after))
+
+        return hot_list
     else:
-        print(None)
+        return None
