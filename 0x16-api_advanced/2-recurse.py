@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-"""Module with top_ten function"""
+"""Find the number of subs"""
 import requests
+import sys
 
 
 def top_ten(subreddit):
-    """ show the top 10 posts in a subreddit """
-    try:
-        # Change the user agent
-        headers = {'User-Agent': 'cmmolanos'}
-        payload = {'t': 'all', 'limit': '10'}
-        request = requests.get('https://api.reddit.com/r/{}/hot'.
-                               format(subreddit), headers=headers,
-                               params=payload)
-        top_posts = request.json()
+    """Queries the Reddit API and prints the titles of the first 10 hot posts
+    listed for a given subreddit."""
 
-        for post in top_posts['data']['children']:
-            print(post['data']['title'])
-
-    except:
-        print("None")
+    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+    parameters = {'limit': 10}
+    json_obj = requests.get(
+        url, headers={'User-Agent': 'My User Agent 1.0'}, params=parameters)
+    if json_obj.status_code != 404:
+        dict_obj = json_obj.json().get('data').get('children')
+        for each in dict_obj:
+            print(each.get('data').get('title'))
+    else:
+        print(None)
