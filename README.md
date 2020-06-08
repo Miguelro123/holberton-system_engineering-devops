@@ -14,29 +14,25 @@
   0x03 | [Shell variables expansions](./0x03-shell_variables_expansions) | 25/06/2019, 2 days
   0x04 | [Loops conditions and parsing](./0x04-loops_conditions_and_parsing) | 27/06/2019, 2 days
   0x05 | [Processes and signals](./0x05-processes_and_signals) | 01/07/2019, 3 days
-  0x06 | [More pointers, arrays and strings](./0x06-pointers_arrays_strings) | 04/07/2019, 2 days
-  0x07 | [Even more pointers, arrays and strings](./0x07-pointers_arrays_strings) | 08/07/2019, 2 days
-  0x08 | [Recursion](./0x08-recursion) | 10/07/2019, 2 days
-  0x09 | [Static libraries](./0x09-static_libraries) | 12/07/2019, 4 days
-  0x0A | [argc, argv](./0x0A-argc_argv) | 12/07/2019, 4 days
-  0x0B | [malloc, free](./0x0B-malloc_free) | 16/07/2019, 2 days
-  0x0C | [More malloc, free](./0x0C-more_malloc_free) | 18/07/2019, 2 days
-  0x0D | [Preprocessor](./0x0D-preprocessor) | 22/07/2019, 2 days
-  0x0E | [Structures, typedef](./0x0E-structures_typedef) | 22/07/2019, 2 days
-  0x0F | [Function pointers](./0x0F-function_pointers) | 24/07/2019, 2 days
-  0x10 | [Variadic functions](./0x10-variadic_functions) | 26/07/2019, 4 days
-  0x12 | [Singly linked lists](./0x12-singly_linked_lists) | 01/08/2019, 2 days
-  0x13 | [More singly linked lists](./0x13-more_singly_linked_lists) | 05/08/2019, 3 days
-  0x14 | [Bit manipulation](./0x14-bit_manipulation) | 08/08/2019, 2 days
-  0x15 | [File I/O](./0x15-file_io) | 13/08/2019, 2 days
-  0x17 | [Doubly linked lists](./0x17-doubly_linked_lists) | 13/09/2019, 4 days
-  0x18 | [Dynamic libraries](./0x18-dynamic_libraries) | 16/09/2019, 2 days
-  0x19 | [Stacks, Queues - LIFO, FIFO](./0x19-stacks_queues_lifo_fifo) | 24/09/2019, 4 days
-  0x1A | [Hash tables](./0x1A-hash_tables) | 10/10/2019, 3 days
-  0x1B | [Sorting algorithms & Big O](./0x1B-sorting_algorithms) | 24/10/2019, 8 days
-  0x1C | [Makefiles](./0x1C-makefiles) | 15/11/2019, 2 days
-  0x1D | [Binary trees](./0x1D-binary_trees) | 02/12/2019, 6 days
-  0x1E | [Search Algorithms](./0x1E-search_algorithms) | 14/01/2020, 4 days
+  0x06 | [Regular expressions](./0x06-regular_expressions) | 04/07/2019, 2 days
+  0x07 | [Networking basics](./0x07-networking_basics) | 08/07/2019, 2 days
+  0x08 | [Networking basics 2](./0x08-networking_basics_2) | 10/07/2019, 2 days
+  0x09 | [Web infrastructure design](./0x09-web_infrastructure_design) | 12/07/2019, 4 days
+  0x0A | [Configuration management](./0x0A-configuration_management) | 12/07/2019, 4 days
+  0x0B | [Ssh](./0x0B-ssh) | 16/07/2019, 2 days
+  0x0C | [Web_server](./0x0C-web_server) | 18/07/2019, 2 days
+  0x0D | [Web stack debugging 0](./0x0D-web_stack_debugging_0) | 22/07/2019, 2 days
+  0x0E | [Web stack debugging 1](./0x0E-web_stack_debugging_1) | 22/07/2019, 2 days
+  0x0F | [Load balancer](./0x0F-load_balancer) | 24/07/2019, 2 days
+  0x10 | [Https ssl](./0x10-https_ssl) | 26/07/2019, 4 days
+  0x12 | [Web stack debugging 2](./0x12-web_stack_debugging_2) | 01/08/2019, 2 days
+  0x13 | [Firewall](./0x13-firewall) | 05/08/2019, 3 days
+  0x14 | [Mysql](./0x14-mysql) | 08/08/2019, 2 days
+  0x15 | [Api](./0x15-api) | 13/08/2019, 2 days
+  0x16 | [Api advanced](./0x16-api_advanced) | 13/09/2019, 4 days
+  0x17 | [Web stack debugging 3](./0x17-web_stack_debugging_3) | 16/09/2019, 2 days
+  0x18 | [Webstack monitoring](./0x18-webstack_monitoring) | 24/09/2019, 4 days
+  0x1B | [Web stack debugging 4](./0x1B-web_stack_debugging_4) | 10/10/2019, 3 days
 
 ---
 
