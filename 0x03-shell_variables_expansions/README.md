@@ -1,21 +1,29 @@
-Tasks
-0. <o>
-1. Hello you
-2. The path to success is to take massive, determined action
-3. If the path be beautiful, let us not ask where it leads
-4. Global variables
-5. Local variables
-6. Local variable 
-7. Global variable
-8. Every addition to true knowledge is an addition to human power
-9. Divide and rule
-10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath
-11. There are 10 types of people in the world -- Those who understand binary, and those who don't
-12. Combination
-13. Floats
-14. Decimal to Hexadecimal 
-15. What happens when you type ls *.c
-16. What is the difference between a hard link and a symbolic link?
-17. Everyone is a proponent of strong encryption
-18. The eggs of the brood need to be an odd number
-19. I'm an instant star. Just add water and stir. 
+---
+
+## Quiz questions
+
+<details>
+<summary>Show</summary>
+  
+
+
+</details>
+
+---
+
+## Tasks
+
+<details>
+<summary>View Contents</summary>
+
+
+
+</details>
+
+---
+
+## Author
+### _Edgar Miguel Rodríguez G._
+
+- **Github:** [Miguelro123](https://github.com/Miguelro123) 
+- **Linkedin:** [Edgar Miguel Rodriguez Garcia](https://www.linkedin.com/in/edgar-miguel-rodriguez-garcia-20a5281a2/)
