@@ -57,39 +57,43 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <details>
 <summary>View Contents</summary>
 
-0. Create a SSH RSA key pair mandatory
-Score: 100.00% (Checks completed: 100.00%)
+### [0. Create a SSH RSA key pair](./0-RSA_public_key.pub)
+
 Read for this task:
 
-Linux and Mac OS users
-Windows users
-man: ssh-keygen
+- [Linux and Mac OS users](https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys)
+- [Windows users](https://support.rackspace.com/how-to/generating-rsa-keys-with-ssh-puttygen/)
 
-You will soon have to manage your own servers hosted on remote data centers. We need to set them up with your RSA public key so that you can access them via SSH.
+man: `ssh-keygen`
+
+You will soon have to manage your own `servers` hosted on remote [data centers](https://www.youtube.com/watch?v=iuqXFC_qIvA&feature=youtu.be&t=46). We need to set them up with your RSA public key so that you can access them via SSH.
 
 Create a RSA key pair.
 
 Requirements:
 
-Share your public key in your answer file 0-RSA_public_key.pub
-Fill the SSH public key field of your intranet profile with the public key you just generated
-Keep the private key to yourself in a secure location, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects
-If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase
+- Share your **public key** in your answer file `0-RSA_public_key.pub`
+- Fill the `SSH public key` field of your intranet profile with the public key you just generated
+- **Keep the private key to yourself in a secure location**, you will use it later to connect to your servers using SSH. Some storing ideas are Dropbox, Google Drive, password manager, USB key. Failing to do so will prevent you to access your servers, which will prevent you from doing your projects
+- If you decide to add a passphrase to your key, make sure to save this passphrase in a secure location, you will not be able to use your keys without the passphrase
+
 SSH and RSA keys will be covered in depth in a later project.
 
-Repo:
+**Repo:**
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 0-RSA_public_key.pub
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `0-RSA_public_key.pub`
 
-1. For Holberton School loop mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that displays Holberton School 10 times.
+### [1. For Holberton School loop](./1-for_holberton_school)
+
+Write a Bash script that displays `Holberton School` 10 times.
 
 Requirement:
 
-You must use the for loop (while and until are forbidden)
+- You must use the `for` loop (`while` and `until` are forbidden)
+
+```
 sylvain@ubuntu$ head -n 2 1-for_holberton_school 
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
@@ -105,23 +109,28 @@ Holberton School
 Holberton School
 Holberton School
 sylvain@ubuntu$ 
+```
+
 Note that:
 
-The first line of my Bash script starts with #!/usr/bin/env bash
-The second line of my Bash scripts is a comment explaining what it is doing
-Repo:
+- The first line of my Bash script starts with `#!/usr/bin/env bash`
+- The second line of my Bash scripts is a comment explaining what it is doing
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 1-for_holberton_school
+**Repo:**
 
-2. While Holberton School loop mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that displays Holberton School 10 times.
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `1-for_holberton_school`
+
+### [2. While Holberton School loop](./2-while_holberton_school)
+
+Write a Bash script that displays `Holberton School` 10 times.
 
 Requirements:
 
-You must use the while loop (for and until are forbidden)
+- You must use the `while` loop (`for` and `until` are forbidden)
+
+```
 sylvain@ubuntu$ ./2-while_holberton_school
 Holberton School
 Holberton School
@@ -134,19 +143,23 @@ Holberton School
 Holberton School
 Holberton School
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 2-while_holberton_school
+**Repo:**
 
-3. Until Holberton School loop mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that displays Holberton School 10 times.
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `2-while_holberton_school`
+
+### [3. Until Holberton School loop](./3-until_holberton_school)
+
+Write a Bash script that displays `Holberton School` 10 times.
 
 Requirements:
 
-You must use the until loop (for and while are forbidden)
+- You must use the `until` loop (`for` and `while` are forbidden)
+
+```
 sylvain@ubuntu$ ./3-until_holberton_school
 Holberton School
 Holberton School
@@ -159,20 +172,24 @@ Holberton School
 Holberton School
 Holberton School
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 3-until_holberton_school
+**Repo:**
 
-4. If 9, say Hi! mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that displays Holberton School 10 times, but for the 9th iteration, displays Holberton School and then Hi on a new line.
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `3-until_holberton_school`
+
+### [4. If 9, say Hi!](./4-if_9_say_hi)
+
+Write a Bash script that displays `Holberton School` 10 times, but for the 9th iteration, displays `Holberton School` and then `Hi` on a new line.
 
 Requirements:
 
-You must use the while loop (for and until are forbidden)
-You must use the if statement
+- You must use the `while` loop (`for` and `until` are forbidden)
+- You must use the `if` statement
+
+```
 sylvain@ubuntu$ ./4-if_9_say_hi
 Holberton School
 Holberton School
@@ -186,23 +203,28 @@ Holberton School
 Hi
 Holberton School
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 4-if_9_say_hi
+**Repo:**
 
-5. 4 bad luck, 8 is your chance mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `4-if_9_say_hi`
+
+### [5. 4 bad luck, 8 is your chance](./5-4_bad_luck_8_is_your_chance)
+
 Write a Bash script that loops from 1 to 10 and:
 
-displays bad luck for the 4th loop iteration
-displays good luck for the 8th loop iteration
-displays Holberton School for the other iterations
+- displays `bad luck` for the 4th loop iteration
+- displays `good luck` for the 8th loop iteration
+- displays `Holberton School` for the other iterations
+
 Requirements:
 
-You must use the while loop (for and until are forbidden)
-You must use the if, elif and else statements
+- You must use the `while` loop (`for` and `until` are forbidden)
+- You must use the `if`, `elif` and `else` statements
+
+```
 sylvain@ubuntu$ ./5-4_bad_luck_8_is_your_chance
 Holberton School
 Holberton School
@@ -215,27 +237,33 @@ good luck
 Holberton School
 Holberton School
 sylvain@ubuntu$ 
+```
+
 For the most curious:
 
-8 in the Chinese culture
-4 in the Chinese culture
-Repo:
+[8 in the Chinese culture](https://freakonomics.com/2006/07/05/lucky-8s-in-china/)
+[4 in the Chinese culture](https://en.wikipedia.org/wiki/Chinese_numerology#Four)
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 5-4_bad_luck_8_is_your_chance
+**Repo:**
 
-6. Superstitious numbers mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `5-4_bad_luck_8_is_your_chance`
+
+### [6. Superstitious numbers](./6-superstitious_numbers)
+
 Write a Bash script that displays numbers from 1 to 20 and:
 
-displays 4 and then bad luck from China for the 4th loop iteration
-displays 9 and then bad luck from Japan for the 9th loop iteration
-displays 17 and then bad luck from Italy for the 17th loop iteration
+- displays `4` and then `bad luck from China` for the 4th loop iteration
+- displays `9` and then `bad luck from Japan` for the 9th loop iteration
+- displays `17` and then `bad luck from Italy` for the 17th loop iteration
+
 Requirements:
 
-You must use the while loop (for and until are forbidden)
-You must use the case statement
+- You must use the `while` loop (`for` and `until` are forbidden)
+- You must use the `case` statement
+
+```
 sylvain@ubuntu$ ./6-superstitious_numbers
 1
 2
@@ -261,23 +289,28 @@ bad luck from Italy
 19
 20
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 6-superstitious_numbers
+**Repo:**
 
-7. Clock mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `6-superstitious_numbers`
+
+### [7. Clock](./7-clock)
+
 Write a Bash script that displays the time for 12 hours and 59 minutes:
 
-display hours from 0 to 12
-display minutes from 1 to 59
+- display hours from 0 to 12
+- display minutes from 1 to 59
+
 Requirements:
 
-You must use the while loop (for and until are forbidden)
-Note that in this example, we only display the first 70 lines using the head command.
+- You must use the `while` loop (`for` and `until` are forbidden)
 
+Note that in this example, we only display the first 70 lines using the `head` command.
+
+```
 sylvain@ubuntu$ ./7-clock | head -n 70
 Hour: 0
 1
@@ -350,23 +383,28 @@ Hour: 1
 8
 9
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 7-clock
+**Repo:**
 
-8. For ls mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `7-clock`
+
+### [8. For ls](./8-for_ls)
+
 Write a Bash script that displays:
 
-The content of the current directory
-In a list format
-Where only the part of the name after the first dash is displayed (refer to the example)
+- The content of the current directory
+- In a list format
+- Where only the part of the name after the first dash is displayed (refer to the example)
+
 Requirements:
 
-You must use the for loop (while and until are forbidden)
-Do not display hidden files
+- You must use the `for` loop (`while` and `until` are forbidden)
+- Do not display hidden files
+
+```
 sylvain@ubuntu$ ls
 100-read_and_cut              1-for_holberton_school         6-superstitious_numbers
 101-tell_the_story_of_passwd  2-while_holberton_school       7-clock
@@ -389,27 +427,31 @@ clock
 for_ls
 to_file_or_not_to_file
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 8-for_ls
+**Repo:**
 
-9. To file, or not to file mandatory
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that gives you information about the holbertonschool file.
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `8-for_ls`
+
+### [9. To file, or not to file](./9-to_file_or_not_to_file)
+
+Write a Bash script that gives you information about the `holbertonschool` file.
 
 Requirements:
 
-You must use if and, else (case is forbidden)
-Your Bash script should check if the file exists and print:
-if the file exists: holbertonschool file exists
-if the file does not exist: holbertonschool file does not exist
-If the file exists, print:
-if the file is empty: holbertonschool file is empty
-if the file is not empty: holbertonschool file is not empty
-if the file is a regular file: holbertonschool is a regular file
-if the file is not a regular file: (nothing)
+- You must use `if` and, `else` (`case` is forbidden)
+- Your Bash script should check if the file exists and print:
+    - if the file exists: `holbertonschool file exists`
+    - if the file does not exist: `holbertonschool file does not exist`
+- If the file exists, print:
+    - if the file is empty: `holbertonschool file is empty`
+    - if the file is not empty: `holbertonschool file is not empty`
+    - if the file is a regular file: `holbertonschool is a regular file`
+    - if the file is not a regular file: (nothing)
+
+```
 sylvain@ubuntu$ file holbertonschool
 holbertonschool: cannot open `holbertonschool' (No such file or directory)
 sylvain@ubuntu$ ./9-to_file_or_not_to_file 
@@ -430,23 +472,27 @@ sylvain@ubuntu$ ./9-to_file_or_not_to_file
 holbertonschool file exists
 holbertonschool file is not empty
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 9-to_file_or_not_to_file
+**Repo:**
 
-10. FizzBuzz mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `9-to_file_or_not_to_file`
+
+### [10. FizzBuzz](./10-fizzbuzz)
+
 Write a Bash script that displays numbers from 1 to 100.
 
 Requirements:
 
-Displays FizzBuzz when the number is a multiple of 3 and 5
-Displays Fizz when the number is multiple of 3
-Displays Buzz when the number is a multiple of 5
-Otherwise, displays the number
-In a list format
+- Displays `FizzBuzz` when the number is a multiple of 3 and 5
+- Displays `Fizz` when the number is multiple of 3
+- Displays `Buzz` when the number is a multiple of 5
+- Otherwise, displays the number
+- In a list format
+
+```
 sylvain@ubuntu$ ./10-fizzbuzz | head -20
 1
 2
@@ -469,26 +515,31 @@ Fizz
 19
 Buzz
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 10-fizzbuzz
+**Repo:**
 
-11. Read and cut #advanced
-Score: 100.00% (Checks completed: 100.00%)
-help: read
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `10-fizzbuzz`
 
-Write a Bash script that displays the content of the file /etc/passwd.
+### [11. Read and cut #advanced](./100-read_and_cut)
+
+help: `read`
+
+Write a Bash script that displays the content of the file `/etc/passwd`.
 
 Your script should only display:
 
-username
-user id
-Home directory path for the user
+- username
+- user id
+- Home directory path for the user
+
 Requirements:
 
-You must use the while loop (for and until are forbidden)
+- You must use the `while` loop (`for` and `until` are forbidden)
+
+```
 sylvain@ubuntu$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -552,29 +603,32 @@ sylvain:99:/bin/bash
 puppet:108:/var/lib/puppet
 ubuntu:1001:/home/ubuntu
 sylvain@ubuntu$ 
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 100-read_and_cut
+**Repo:**
 
-12. Tell the story of passwd #advanced
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `100-read_and_cut`
 
+### [12. Tell the story of passwd #advanced](./101-tell_the_story_of_passwd)
 
 Read:
 
-IFS (internal field separator)
-Understanding /etc/passwd
-The file /etc/passwd has already been covered in a previous project and you should be familiar with it. Today we will make up a story based on it.
+- [IFS (internal field separator)](http://www.tldp.org/LDP/abs/html/internalvariables.html)
+- [Understanding /etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/)
 
-Write a Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
+The file `/etc/passwd` has already been covered in a previous project and you should be familiar with it. Today we will make up a story based on it.
 
-Format: The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO
+Write a Bash script that displays the content of the file `/etc/passwd`, using the `while` loop + IFS.
+
+Format: `The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO`
 
 Requirements:
 
-You must use the while loop (for and until are forbidden)
+- You must use the `while` loop (`for` and `until` are forbidden)
+
+```
 sylvain@ubuntu$ ./101-tell_the_story_of_passwd
 The user root is part of the 0 gang, lives in /root and rides /bin/bash. 0's place is protected by the passcode x, more info about the user here: root
 The user daemon is part of the 1 gang, lives in /usr/sbin and rides /usr/sbin/nologin. 1's place is protected by the passcode x, more info about the user here: daemon
@@ -606,32 +660,34 @@ The user statd is part of the 65534 gang, lives in /var/lib/nfs and rides /bin/f
 The user puppet is part of the 114 gang, lives in /var/lib/puppet and rides /bin/false. 108's place is protected by the passcode x, more info about the user here: Puppet configuration management daemon,,,
 The user ubuntu is part of the 1001 gang, lives in /home/ubuntu and rides /bin/bash. 1001's place is protected by the passcode x, more info about the user here: Ubuntu
 sylvain@ubuntu$
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 101-tell_the_story_of_passwd
+**Repo:**
 
-13. Let's parse Apache logs #advanced
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `101-tell_the_story_of_passwd`
 
+### [13. Let's parse Apache logs #advanced](./102-lets_parse_apache_logs)
 
-Apache is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
+[Apache](https://en.wikipedia.org/wiki/Apache_HTTP_Server) is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
 
-As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
+As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of [Apache log access files](http://intranet-projects-files.s3.amazonaws.com/holbertonschool-sysadmin_devops/80/apache-access.log).
 
 Today the Customer Support department reported that a user reported that the site is being “buggy”. Not being a detailed description, you want to have a look at the Apache logs and gather data about the traffic.
 
-Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+Write a Bash script that displays the visitor IP along with the [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) from the Apache log file.
 
 Requirement:
 
-Format: IP HTTP_CODE
-in a list format
-See example
-You must use awk
-You are not allowed to use while, for, until and cut
-Download and commit the apache-access.log file along with your answers files
+- Format: IP HTTP_CODE
+    - in a list format
+    - See example
+- You must use `awk`
+-You are not allowed to use `while`, `for`, `until` and `cut`
+- Download and commit the [apache-access.log file](http://intranet-projects-files.s3.amazonaws.com/holbertonschool-sysadmin_devops/80/apache-access.log) along with your answers files
+
+```
 sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 185.130.5.207 301
 185.130.5.207 301
@@ -644,27 +700,31 @@ sylvain@ubuntu$ ./102-lets_parse_apache_logs | tail -n 10
 50.116.30.23 304
 209.133.111.211 200
 sylvain@ubuntu$
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 102-lets_parse_apache_logs
+**Repo:**
 
-14. Dig the data #advanced
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `102-lets_parse_apache_logs`
+
+### [14. Dig the data #advanced](./103-dig_the-data)
+
 Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
 
 Using what you did in the previous exercise, write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
 
 Requirements:
 
-The exact format must be:
-OCCURENCE_NUMBER IP HTTP_CODE
-In list format
-Ordered from the greatest to the lowest number of occurrences
-See example
-You must use awk
-You are not allowed to use while, for, until and cut
+- The exact format must be:
+    - OCCURENCE_NUMBER IP HTTP_CODE
+    - In list format
+- Ordered from the greatest to the lowest number of occurrences
+    - See example
+- You must use `awk`
+- You are not allowed to use `while`, `for`, `until` and `cut`
+
+```
 sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     141 130.0.236.153 200
     140 62.210.250.66 200
@@ -677,11 +737,13 @@ sylvain@ubuntu$ ./103-dig_the-data | head -n 10
     36 2.1.201.36 304
     36 195.154.172.53 200
 sylvain@ubuntu$
-Repo:
+```
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x04-loops_conditions_and_parsing
-File: 103-dig_the-data
+**Repo:**
+
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x04-loops_conditions_and_parsing`
+* File: `103-dig_the-data`
 
 </details>
 
