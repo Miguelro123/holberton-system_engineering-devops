@@ -1,36 +1,44 @@
 # 0x08. Networking basics #1
 
 ## Resources
-Read or watch:
 
-What is localhost
-What is 0.0.0.0
-What is the hosts file
-Netcat examples
-man or help:
+**Read or watch:**
 
-ifconfig
-telnet
-nc
-cut
-Learning Objectives
+- [What is localhost](https://en.wikipedia.org/wiki/Localhost)
+- [What is 0.0.0.0](https://en.wikipedia.org/wiki/0.0.0.0)
+- [What is the hosts file](https://www.makeuseof.com/tag/modify-manage-hosts-file-linux/)
+- [Netcat examples](https://www.thegeekstuff.com/2012/04/nc-command-examples/)
+
+**man or help:**
+
+- `ifconfig`
+- `telnet`
+- `nc`
+- `cut`
+
+## Learning Objectives
+
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-General
-What is localhost/127.0.0.1
-What is 0.0.0.0
-What is /etc/hosts
-How to display your machine’s active network interfaces
-Requirements
-General
-Allowed editors: vi, vim, emacs
-All your files will be interpreted on Ubuntu 14.04 LTS
-All your files should end with a new line
-A README.md file, at the root of the folder of the project, is mandatory
-All your Bash script files must be executable
-Your Bash script must pass Shellcheck (version 0.3.3-1~ubuntu14.04.1 via apt-get) without any errors
-The first line of all your Bash scripts should be exactly #!/usr/bin/env bash
-The second line of all your Bash scripts should be a comment explaining what is the script doing
+### General
+
+- What is localhost/127.0.0.1
+- What is 0.0.0.0
+- What is `/etc/hosts`
+- How to display your machine’s active network interfaces
+
+## Requirements
+
+### General
+
+- Allowed editors: `vi`, `vim`, `emacs`
+- All your files will be interpreted on Ubuntu 14.04 LTS
+- All your files should end with a new line
+- A `README.md` file, at the root of the folder of the project, is mandatory
+- All your Bash script files must be executable
+- Your Bash script must pass `Shellcheck` (version `0.3.3-1~ubuntu14.04.1` via `apt-get`) without any errors
+- The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
+- The second line of all your Bash scripts should be a comment explaining what is the script doing
 
 ---
 
@@ -39,43 +47,47 @@ The second line of all your Bash scripts should be a comment explaining what is 
 <details>
 <summary>View Contents</summary>
 
-0. Localhost mandatory
-Score: 100.00% (Checks completed: 100.00%)
-What is localhost?
+### [0. Localhost](./0-localhost)
 
-A hostname that means this IP
-A hostname that means this computer
-An IP attached to a computer
-Repo:
+What is `localhost`?
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x08-networking_basics_2
-File: 0-localhost
+1. A hostname that means this IP
+2. A hostname that means this computer
+3. An IP attached to a computer
 
-1. All IPs mandatory
-Score: 100.00% (Checks completed: 100.00%)
-What is 0.0.0.0?
+**Repo:**
 
-All IPv4 addresses on the local machine
-All the IPs
-It means null in networking
-Repo:
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x08-networking_basics_2`
+* File: `0-localhost`
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x08-networking_basics_2
-File: 1-wildcard
+### [1. All IPs](./1-wildcard)
 
-2. Change your home IP mandatory
-Score: 100.00% (Checks completed: 100.00%)
+What is `0.0.0.0`?
+
+1. All IPv4 addresses on the local machine
+2. All the IPs
+3. It means null in networking
+
+**Repo:**
+
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x08-networking_basics_2`
+* File: `1-wildcard`
+
+### [2. Change your home IP](./2-change_your_home_IP)
+
 Write a Bash script that configures an Ubuntu server with the below requirements.
 
 Requirements:
 
-localhost resolves to 127.0.0.2
-facebook.com resolves to 8.8.8.8.
-The checker is running on Docker, so make sure to read this
+- `localhost` resolves to `127.0.0.2`
+- `facebook.com` resolves to `8.8.8.8`.
+- The checker is running on Docker, so make sure to read [this](https://web.archive.org/web/20171117023601/http://blog.jonathanargentiero.com/docker-sed-cannot-rename-etcsedl8ysxl-device-or-resource-busy/)
+
 Example:
 
+```
 sylvain@ubuntu$ ping localhost
 PING localhost (127.0.0.1) 56(84) bytes of data.
 64 bytes from localhost (127.0.0.1): icmp_seq=1 ttl=64 time=0.012 ms
@@ -110,73 +122,85 @@ PING facebook.com (8.8.8.8) 56(84) bytes of data.
 --- facebook.com ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 8.065/8.065/8.065/0.000 ms
+```
+
 In this example we can see that:
 
-before running the script, localhost resolves to 127.0.0.1 and facebook.com resolves to 157.240.11.35
-after running the script, localhost resolves to 127.0.0.2 and facebook.com resolves to 8.8.8.8
-If you’re running this script on a machine that you’ll continue to use, be sure to revert localhost to 127.0.0.1. Otherwise, a lot of things will stop working!
+- before running the script, `localhost` resolves to `127.0.0.1` and `facebook.com` resolves to 157.240.11.35
+- after running the script, `localhost` resolves to `127.0.0.2` and `facebook.com` resolves to `8.8.8.8`
 
-Repo:
+If you’re running this script on a machine that you’ll continue to use, be sure to revert `localhost` to `127.0.0.1`. Otherwise, a lot of things will stop working!
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x08-networking_basics_2
-File: 2-change_your_home_IP
+**Repo:**
 
-3. Show attached IPs mandatory
-Score: 100.00% (Checks completed: 100.00%)
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x08-networking_basics_2`
+* File: `2-change_your_home_IP`
+
+### [3. Show attached IPs](./3-show_attached_IPs)
+
 Write a Bash script that displays all active IPv4 IPs on the machine it’s executed on.
 
 Example:
 
+```
 sylvain@ubuntu$ ./3-show_attached_IPs | cat -e
 10.0.2.15$
 127.0.0.1$
 sylvain@ubuntu$
+```
+
 Obviously, the IPs displayed may be different depending on which machine you are running the script on.
 
-Note that we can see our localhost IP :)
+Note that we can see our `localhost` IP :)
 
-Repo:
+**Repo:**
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x08-networking_basics_2
-File: 3-show_attached_IPs
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x08-networking_basics_2`
+* File: `3-show_attached_IPs`
 
-4. Port listening on localhost #advanced
-Score: 100.00% (Checks completed: 100.00%)
-Write a Bash script that listens on port 98 on localhost.
+### [4. Port listening on localhost #advanced](./4-port_listening_on_localhost)
 
-Terminal 0
+Write a Bash script that listens on port `98` on `localhost`.
+
+**Terminal 0**
 
 Starting my script.
 
+```
 sylvain@ubuntu$ sudo ./4-port_listening_on_localhost
-Terminal 1
+```
 
-Connecting to localhost on port 98 using telnet and typing some text.
+**Terminal 1**
 
+Connecting to `localhost` on port `98` using `telnet` and typing some text.
+
+```
 sylvain@ubuntu$ telnet localhost 98
 Trying 127.0.0.2...
 Connected to localhost.
 Escape character is '^]'.
 Hello world
 test
-Terminal 0
+```
+
+**Terminal 0**
 
 Receiving the text on the other side.
 
 sylvain@ubuntu$ sudo ./4-port_listening_on_localhost
 Hello world
 test
-For the sake of the exercise, this connection is made entirely within localhost. This isn’t really exciting as is, but we can use this script across networks as well. Try running it between your local PC and your remote server for fun!
+For the sake of the exercise, this connection is made entirely within `localhost`. This isn’t really exciting as is, but we can use this script across networks as well. Try running it between your local PC and your remote server for fun!
 
 As you can see, this can come in very handy in a multitude of situations. Maybe you’re debugging socket connection issues, or you’re trying to connect to a software and you are unsure if the issue is the software or the network, or you’re working on firewall rules… Another tool to add to your debugging toolbox!
 
-Repo:
+**Repo:**
 
-GitHub repository: holberton-system_engineering-devops
-Directory: 0x08-networking_basics_2
-File: 4-port_listening_on_localhost
+* GitHub repository: `holberton-system_engineering-devops`
+* Directory: `0x08-networking_basics_2`
+* File: `4-port_listening_on_localhost`
 
 </details>
 
